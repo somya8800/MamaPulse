@@ -1,16 +1,22 @@
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react'
 import Home from './Component/home'
-import BabyCareLanding from './page'
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
-function App() {
+function App () {
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<BabyCareLanding/>}></Route>
-        <Route path='/Component' element={<Home/>}></Route>
-      </Routes>
-    </Router>
+    <div>
+      <Home/>
+      <header>
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+    </header>
+    </div>
+    
   )
 }
 
