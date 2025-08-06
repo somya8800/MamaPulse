@@ -1,7 +1,6 @@
 import React from 'react'
 import { Routes, Route} from 'react-router-dom'
 import Home from './Component/home'
-import HomeSimple from './Component/home-simple'
 import BabyCareLanding from './Component/baby-care-landing'
 
 function App() {
