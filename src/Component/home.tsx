@@ -56,7 +56,7 @@ const Home: React.FC = () => {
 
   // Mock data for baby healthcare
   const babyInfo = {
-    name: "Emma Rose",
+    name: "Tina Gupta",
     age: "3 months 2 weeks",
     weight: "5.2 kg",
     height: "58 cm",
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
       id: 5,
       type: "community",
       title: "New Community Post",
-      message: "Dr. Jennifer K. shared expert advice about sleep training methods.",
+      message: "Dr. K Jindal. shared expert advice about sleep training methods.",
       time: "2 days ago",
       read: false,
       priority: "low",
@@ -160,7 +160,7 @@ const Home: React.FC = () => {
   // Profile data
   const profileData = {
     baby: {
-      name: "Emma Rose",
+      name: "Tina Gupta",
       dateOfBirth: "November 15, 2023",
       gender: "Female",
       bloodType: "O+",
@@ -168,29 +168,29 @@ const Home: React.FC = () => {
       birthHeight: "50 cm",
       currentWeight: "5.2 kg",
       currentHeight: "58 cm",
-      pediatrician: "Dr. Sarah Johnson",
+      pediatrician: "Dr. Sarah Jain",
       emergencyContact: "+1 (555) 123-4567",
       allergies: "None known",
       medicalConditions: "None",
     },
     mother: {
-      name: "Jessica Smith",
+      name: "Sangita Gupta",
       age: "28 years",
       dateOfBirth: "March 10, 1995",
       bloodType: "A+",
       deliveryDate: "November 15, 2023",
       deliveryType: "Natural Birth",
-      obstetrician: "Dr. Maria Rodriguez",
+      obstetrician: "Dr. Naina Malhotra",
       postpartumWeeks: "14 weeks",
       breastfeeding: "Yes",
       mentalHealthSupport: "Yes",
       emergencyContact: "+1 (555) 987-6543",
     },
     family: {
-      partner: "Michael Smith",
+      partner: "Mayank Gupta",
       partnerAge: "30 years",
       siblings: "None",
-      address: "123 Family Lane, Baby City, BC 12345",
+      address: "Sector-88, Greater Faridabad, Haryana",
       insurance: "HealthCare Plus",
       policyNumber: "HC123456789",
     },
@@ -198,9 +198,9 @@ const Home: React.FC = () => {
 
   const healthStats = [
     { label: "Weight", value: "5.2 kg", change: "+0.3kg", trend: "up", icon: Scale, color: "pink" },
-    { label: "Height", value: "58 cm", change: "+2cm", trend: "up", icon: Ruler, color: "peach" },
+    { label: "Height", value: "58 cm", change: "+2cm", trend: "up", icon: Ruler, color: "orange" },
     { label: "Temperature", value: "36.8°C", change: "Normal", trend: "stable", icon: Thermometer, color: "pink" },
-    { label: "Sleep Hours", value: "14h", change: "+1h", trend: "up", icon: Moon, color: "peach" },
+    { label: "Sleep Hours", value: "14h", change: "+1h", trend: "up", icon: Moon, color: "orange" },
   ]
 
   // Vaccination Schedule Data
@@ -256,22 +256,22 @@ const Home: React.FC = () => {
   const doctorContacts = [
     {
       id: 1,
-      name: "Dr. Sarah Johnson",
+      name: "Dr. Sarah Jain",
       specialty: "Pediatrician",
       phone: "+1 (555) 123-4567",
       email: "dr.johnson@babyclinic.com",
-      address: "123 Children's Way, Baby City, BC 12345",
+      address: "Sector-80, Faridabad, Haryana",
       availability: "Mon-Fri: 8AM-6PM, Sat: 9AM-2PM",
       emergencyHours: "24/7 Emergency Line",
       type: "primary",
     },
     {
       id: 2,
-      name: "Dr. Michael Chen",
+      name: "Dr. Saurabh Bansal",
       specialty: "Pediatric Nutritionist",
       phone: "+1 (555) 234-5678",
       email: "dr.chen@nutrition.com",
-      address: "456 Health Street, Baby City, BC 12345",
+      address: "GovindPuri, New Delhi, India",
       availability: "Tue, Thu, Sat: 10AM-4PM",
       emergencyHours: "Consultation only",
       type: "specialist",
@@ -282,7 +282,7 @@ const Home: React.FC = () => {
       specialty: "Emergency Care",
       phone: "+1 (555) 911-BABY",
       email: "emergency@babyhospital.com",
-      address: "789 Emergency Blvd, Baby City, BC 12345",
+      address: "NewFriends Colony, New Delhi, India",
       availability: "24/7 Available",
       emergencyHours: "Always available",
       type: "emergency",
@@ -299,7 +299,7 @@ const Home: React.FC = () => {
       height: "58 cm",
       headCircumference: "40 cm",
       temperature: "36.8°C",
-      doctor: "Dr. Sarah Johnson",
+      doctor: "Dr. Sarah Jain",
       notes: "Healthy growth, good appetite, active and alert. Sleeping well through the night.",
       vaccinations: ["None"],
       nextAppointment: "2024-03-10",
@@ -312,7 +312,7 @@ const Home: React.FC = () => {
       height: "56 cm",
       headCircumference: "39 cm",
       temperature: "36.7°C",
-      doctor: "Dr. Sarah Johnson",
+      doctor: "Dr. Sarah Jain",
       notes: "Good weight gain, normal development milestones reached.",
       vaccinations: ["None"],
       nextAppointment: "2024-02-10",
@@ -325,7 +325,7 @@ const Home: React.FC = () => {
       height: "54 cm",
       headCircumference: "38 cm",
       temperature: "36.9°C",
-      doctor: "Dr. Sarah Johnson",
+      doctor: "Dr. Sarah Jain",
       notes: "Received Hepatitis B vaccine. No adverse reactions observed.",
       vaccinations: ["Hepatitis B"],
       nextAppointment: "2024-01-30",
@@ -341,7 +341,7 @@ const Home: React.FC = () => {
       weight: "62 kg",
       bloodPressure: "118/75 mmHg",
       temperature: "36.6°C",
-      doctor: "Dr. Maria Rodriguez",
+      doctor: "Dr. Naina Malhotra",
       notes: "Excellent recovery progress. Incision healing well. Cleared for normal activities and exercise.",
       mentalHealth: "Good mood, no signs of postpartum depression",
       breastfeeding: "Going well, no issues",
@@ -354,7 +354,7 @@ const Home: React.FC = () => {
       weight: "64 kg",
       bloodPressure: "120/78 mmHg",
       temperature: "36.7°C",
-      doctor: "Dr. Sarah Thompson (Counselor)",
+      doctor: "Dr. Divya Aggarwal (Counselor)",
       notes: "Discussed sleep deprivation and adjustment challenges. Provided coping strategies.",
       mentalHealth: "Mild baby blues, within normal range",
       breastfeeding: "Some initial difficulties, improving with support",
@@ -367,7 +367,7 @@ const Home: React.FC = () => {
       weight: "66 kg",
       bloodPressure: "125/80 mmHg",
       temperature: "36.8°C",
-      doctor: "Dr. Maria Rodriguez",
+      doctor: "Dr. Maria Dsouza",
       notes: "Normal postpartum recovery. Discussed contraception options and self-care.",
       mentalHealth: "Adjusting well, some emotional fluctuations",
       breastfeeding: "Establishing routine, minor latch issues addressed",
@@ -396,7 +396,7 @@ const Home: React.FC = () => {
   const communityPosts = [
     {
       id: 1,
-      author: "Sarah M.",
+      author: "Sarah MGupta",
       avatar: "👩",
       verified: true,
       post: "My baby started sleeping through the night at 3 months! The key was establishing a consistent bedtime routine. Here's what worked for us...",
@@ -408,7 +408,7 @@ const Home: React.FC = () => {
     },
     {
       id: 2,
-      author: "Mike D.",
+      author: "Vipul",
       avatar: "👨",
       verified: false,
       post: "First vaccination appointment tomorrow. Any advice for keeping baby calm during shots? I'm more nervous than my wife! 😅",
@@ -420,7 +420,7 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      author: "Emma L.",
+      author: "Sangita",
       avatar: "👩",
       verified: true,
       post: "Introducing solids next month. What were your baby's first favorite foods? Looking for ideas beyond the typical rice cereal start.",
@@ -432,7 +432,7 @@ const Home: React.FC = () => {
     },
     {
       id: 4,
-      author: "Dr. Jennifer K.",
+      author: "Dr. Siya M.",
       avatar: "👩‍⚕️",
       verified: true,
       expert: true,
@@ -450,25 +450,25 @@ const Home: React.FC = () => {
     {
       id: 1,
       title: "Baby Sleep Workshop",
-      organizer: "Dr. Sarah Johnson",
+      organizer: "Dr. Sarah Gupta",
       clinic: "Children's Health Clinic",
       date: "2024-03-15",
       time: "10:00 AM - 12:00 PM",
-      location: "123 Children's Way, Baby City, BC 12345",
+      location: "BataChowk, Faridabad",
       type: "workshop",
       category: "Sleep & Development",
       description: "Learn effective sleep training techniques and create healthy sleep routines for your baby.",
       capacity: 20,
       registered: 12,
       price: "Free",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "src\assets\img3.png",
       tags: ["sleep", "newborn", "parenting"],
       requirements: "Babies 0-12 months welcome",
     },
     {
       id: 2,
       title: "Infant CPR & First Aid Certification",
-      organizer: "Dr.Michael Chen",
+      organizer: "Dr. Ujjawal Singh",
       clinic: "Baby Emergency Training Center",
       date: "2024-03-20",
       time: "2:00 PM - 5:00 PM",
@@ -478,7 +478,7 @@ const Home: React.FC = () => {
       description: "Get certified in infant CPR and learn essential first aid skills every parent should know.",
       capacity: 15,
       registered: 8,
-      price: "$75",
+      price: "299/-",
       image: "/placeholder.svg?height=200&width=300",
       tags: ["CPR", "first aid", "safety", "certification"],
       requirements: "No prior experience needed",
@@ -504,7 +504,7 @@ const Home: React.FC = () => {
     {
       id: 4,
       title: "Baby's First Foods Cooking Class",
-      organizer: "Dr. Amanda Wilson",
+      organizer: "Dr. Nancy Patel",
       clinic: "Pediatric Nutrition Institute",
       date: "2024-03-25",
       time: "3:00 PM - 5:30 PM",
@@ -514,7 +514,7 @@ const Home: React.FC = () => {
       description: "Learn to prepare nutritious, age-appropriate meals for babies starting solids.",
       capacity: 12,
       registered: 9,
-      price: "$45",
+      price: "399/-",
       image: "/placeholder.svg?height=200&width=300",
       tags: ["nutrition", "cooking", "solids", "6months+"],
       requirements: "Babies 4-8 months",
@@ -522,7 +522,7 @@ const Home: React.FC = () => {
     {
       id: 5,
       title: "Postpartum Mental Health Seminar",
-      organizer: "Dr. Jennifer Thompson",
+      organizer: "Dr. Sangita Prabhkar",
       clinic: "Women's Wellness Hospital",
       date: "2024-03-28",
       time: "6:00 PM - 8:00 PM",
@@ -540,7 +540,7 @@ const Home: React.FC = () => {
     {
       id: 6,
       title: "Baby Development Milestones Check",
-      organizer: "Dr. Robert Kim",
+      organizer: "Dr. Harsh Bhardwaj",
       clinic: "Child Development Center",
       date: "2024-04-02",
       time: "9:00 AM - 11:00 AM",
@@ -2709,7 +2709,7 @@ const Home: React.FC = () => {
                 <Baby className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-pink-800">BabyCare</h1>
+                <h1 className="text-xl font-bold text-pink-800">MAMAPULSE</h1>
                 <p className="text-xs text-pink-600">Healthcare Dashboard</p>
               </div>
             </div>
@@ -2780,7 +2780,7 @@ const Home: React.FC = () => {
       <footer className="bg-white/80 backdrop-blur-sm border-t border-pink-100 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="text-center">
-            <p className="text-sm text-pink-600">Made with ❤️ for caring parents • BabyCare Dashboard v1.0</p>
+            <p className="text-sm text-pink-600">Made with ❤️ for caring parents • MamaPulse Dashboard </p>
           </div>
         </div>
       </footer>
