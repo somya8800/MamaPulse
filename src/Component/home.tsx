@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import {
   Heart,
   Users,
@@ -45,9 +46,11 @@ import {
   RefreshCw,
   BookMarkedIcon as MarkAsUnread,
   Trash2,
+  ArrowRight,
 } from "lucide-react"
 
 const Home: React.FC = () => {
+  const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState("dashboard")
   const [healthRecordView, setHealthRecordView] = useState("baby")
 
@@ -2712,6 +2715,13 @@ const Home: React.FC = () => {
             </div>
             <div className="flex items-center space-x-4">
               <button
+                onClick={() => navigate('/')}
+                className="flex items-center space-x-2 px-3 py-2 text-sm font-medium text-pink-600 hover:text-pink-800 hover:bg-pink-50 rounded-lg transition-colors"
+              >
+                <ArrowRight className="h-4 w-4 rotate-180" />
+                <span className="hidden sm:inline">Back to Landing</span>
+              </button>
+              <button
                 onClick={() => setActiveTab("notifications")}
                 className="relative hover:scale-110 transition-transform"
               >
@@ -2770,7 +2780,7 @@ const Home: React.FC = () => {
       <footer className="bg-white/80 backdrop-blur-sm border-t border-pink-100 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="text-center">
-            <p className="text-sm text-pink-600">Made with ❤️ for caring parents • BabyCare Dashboard </p>
+            <p className="text-sm text-pink-600">Made with ❤️ for caring parents • BabyCare Dashboard v1.0</p>
           </div>
         </div>
       </footer>

@@ -1,22 +1,15 @@
-
 import React from 'react'
+import { Routes, Route} from 'react-router-dom'
 import Home from './Component/home'
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
+import HomeSimple from './Component/home-simple'
+import BabyCareLanding from './Component/baby-care-landing'
 
-function App () {
+function App() {
   return (
-    <div>
-      <Home/>
-      <header>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-    </header>
-    </div>
-    
+    <Routes>
+      <Route path="/" element={<BabyCareLanding />} />
+      <Route path="/dashboard" element={<Home />} />
+    </Routes>
   )
 }
 
